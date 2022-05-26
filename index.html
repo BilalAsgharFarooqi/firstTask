@@ -13,119 +13,120 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent" >
-        <a class="navbar-brand" href="#">
-          <img src="/Logo.png" width="30" height="30" alt="" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Product
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Enterprise</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Explore
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Marketplace</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Pricing
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-*">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="logoo" href="#">
+            <img src="/Logo.png" width="30" height="30" alt="" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Enterprise</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Marketplace</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Pricing
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search GitHub"
+              aria-label="Search"
+            />
+            <button type="button" class="btn">SignIn</button>
+            <button type="button" class="btn btn-outline-light">SignUp</button>
+          </form>
         </div>
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search GitHub"
-            aria-label="Search"
-          />
-        <button type="button" class="btn btn-outline-light">SignIn</button>
-        <button type="button" class="btn btn-outline-light ">SignOut</button>
-        </form>
       </nav>
     </section>
-    <section>
+    <section class="body-left">
       <h1>Where the world builds software</h1>
-      <h6>
+      <p>
         Millions of developers and companies build, ship, and maintain their
         software on GitHub—the largest and most advanced development platform in
         the world.
-      </h6>
-      <label><input type="email" name="email"/></label>
-      <button type="button" class="btn btn-success">SignUp for GitHub</button>
-      <br />
-      <img src="./globe.png" />
-    </section>
-    <!-- <section>83+million Developers 4+million Organization 200+million 90%</section> -->
-    <section>
-      <h3>Build like the best with GitHub Enterprise</h3>
-      <p>
-        Take collaboration to the next level with security and administrative
-        features built for teams.
       </p>
-      <img src="social.png" alt="social image"> <!-- Start a free trial Contact Sales -- />
 
+      <div class="check">
+        <label><input type="email" name="email" /></label>
+        <button
+          type="button"
+          class="btn btn-success"
+          placeholder="Email Address"
+        >
+          SignUp for GitHub
+        </button>
+      </div>
+      <br />
+    </section>
+    <section>
+      <div class="detail">
+        <div class="m-detail">
+          <article>83+million Developers</article>
+          <article>4+million Organization</article>
+          <article>200+million 90%</article>
+        </div>
+        <div class="i-detail">
+          <img src="./space.png" />
+        </div>
+      </div>
+      <div class="globe">
+        <img src="./globe.png" />
+      </div>
+    </section>
+    <section class="rectangle">
+      <div class="with-img">
+        <h3>Build like the best with GitHub Enterprise</h3>
+        <p>
+          Take collaboration to the next level with security and administrative
+          features built for teams.
+        </p>
+      </div>
+      <div class="social-img">
+        <img src="social.png" alt="social image" />
+      </div>
     </section>
   </body>
 </html>
