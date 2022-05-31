@@ -4,153 +4,141 @@
     <title>GitHub</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Actor:wght@400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Actor:wght@400&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-*">
-      <div class="container-fluid">
+    <div class="container-fluid">
+      <!-- The following section includes the nav-bar -->
+      <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-*">
         <div class="nav-adjust">
           <a class="navbar-brand" id="logoo" href="#">
-            <img src="/Logo.png" width="30" height="30" alt="" />
+            <img src="./Logo.png" width="30" height="30" alt="" />
           </a>
+          <!-- Left side of navbar -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Product
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product 
                 </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link text-white" href="#">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Enterprise</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Explore
+                <a class="nav-link text-white" href="#">Team
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Marketplace</a>
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Enterprise
+                </a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Pricing
+                <a class="nav-link dropdown-toggle text-white" href="#"                id="navbarDropdownMenuLink" data-toggle="dropdown"           aria-haspopup="true" aria-expanded="false">Explore
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Marketplace
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pricing
                 </a>
               </li>
             </ul>
           </div>
-      <form class="form-inline">
-        <div class="ty">  
-        <input
-            id="b-color"
-              type="search"
-            placeholder="Search GitHub"
-            />
-          <img src="./icon.png" alt="logo">
-</div>
-          <button type="button" id="nav-btn1" class="btn-1">Sign in</button>
-          <button type="button" id="nav-btn2" class="btn-2">
-            Sign up
-          </button>
-        </form>
-      </div>
         </div>
-    </nav>
-       <section class="body-left">
-      <div class="frame-5">
-        <p id="body-1">Where the world builds software</p>
-        <p id="body-2">
+          <!-- Right side of navbar -->
+          <form class="form-nav">
+            <div class="icon-inside">  
+              <input class="b-color" type="search" placeholder="Search GitHub"
+            /><img src="./icon.png" alt="logo">
+            </div>
+            <button type="button" id="nav-btn1" class="btn">Sign in
+            </button>
+            <button type="button" id="nav-btn2" class="btn">
+            Sign up
+            </button>
+        </form>
+      </nav>
+      </section>
+      <!--The following section includes left-body screen -->
+      <section class="body-left">
+        <div class="body frame">
+          <p id="body-text-1">Where the world builds software
+          </p>
+          <p id="body-text-2">
           Millions of developers and companies build, ship, and maintain their
           software on GitHub—the largest and most advanced development platform
           in the world.
-        </p>
-        <section class="middle">
-        <div class="Sign">
-          <label><input type="email" name="email" id="em-te" /></label>
-          <button
-            type="button"
-            id="success-btn"
-            class="btn"
-            placeholder="Email Address"
-          >
-            <strong id="t-1">Sign up for GitHub</strong>
+          </p>
+          <div class="up-sign">
+          <label><input type="email" name="email" id="em-text" /></label>
+          <button type="button" id="success-btn" class="btn-success"
+           placeholder="Email Address">Sign up for GitHub
           </button>
+          </div>
         </div>
-                  <br />
-      </div>
-    </section>
-    <div class="globe">
-      <img src="./globe.png" />
+      </section>
+      <!-- The following section includes statistics with a globe image -->
+      <section>
+        <div id="globe">
+          <img src="./globe.png" />
+        </div>
+        <div id="line"></div>
+        <div class="stats">
+          <article id="a1">
+            <span class="a">83+ million</span><br><span class="b">Developers
+            </span> 
+          </article>
+          <article id="a2">
+            <span class="a">4+ million</span><span class="b"> Organization
+            </span>
+          </article>
+          <article id="a3">
+            <span class="a">200+ million</span><span class="b"> Repositories
+            </span>
+          </article>
+          <article id="a4">
+            <span class="a">90%</span> <span class="b">Fortune 100
+            </span>
+          </article>
+        </div>
+      </section>
+      <!-- The following section includes bottom portion of the project -->
+      <section>
+        <img src="./bimage.png" class="bg-image" id="rectangle-big"></img> 
+        <div id="space-img">
+          <img src="./space.png" />
+        </div>
+        <div id="rectangle-small"></div>
+        <div id="social-img">
+          <img src="./social.png" alt="social image" />
+        </div>
+        <!-- Text and button with social-image inside rectangle-small -->
+        <div class="rec-text">
+          <p id="rec-text-1">Build like the best with GitHub Enterprise</p>
+          <p id="rec-text-2">Take collaboration to the next level with security and administrative features built for teams.
+          </p>
+        <button type="button" class="btn" id="b-1">Start a Free Trial</button>
+        <button type="button" class="btn" id="b-2">Contact Sales</button>
+        </div>
+      </section>
+      <!-- The classes added in the following section are for design purpose in the project -->
+      <section>
+        <div id="design-1"></div>
+        <div id="design-2"></div>
+        <div id="design-3"></div>
+      </section>
     </div>
-    <div class="line"></div>
-    <div class="m-detail">
-      <article id="a1"><span class="a">83+ million</span><br><span class="b">Developers</span> </article>
-      <article id="a2"><span class="a">4+ million</span><span class="b"> Organization</span></article>
-      <article id="a3"><span class="a">200+ million</span><span class="b"> Repositories</span></article>
-        <article id="a4"><span class="a">90%</span> <span class="b">Fortune 100</span></article>
-    </div>
-<img src="/bimage.png" class="bg-image" id="rectangle-big"></img> 
-    <div class="i-detail">
-      <img src="./space.png" />
-    </div>
-    <div class="rectangle-small"></div>
-    <div class="social-img">
-      <img src="social.png" alt="social image" />
-    </div>
-    <div class="set">
-      <p id="set-1">Build like the best with GitHub Enterprise</p>
-      <p id="set-2">
-        Take collaboration to the next level with security and administrative
-        features built for teams.
-      </p>
-        <button type="button" class="bb" id="b-1">Start a Free Trial</button>
-        <button type="button" class="bb" id="b-2">Contact Sales</button>
-      
-    </div>
-    <div class="ecl-5"></div>
-    <div class="ecl-4"></div>
-    <div class="ecl-2"></div>
   </body>
 </html>

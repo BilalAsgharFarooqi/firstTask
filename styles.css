@@ -13,10 +13,6 @@ nav {
   height: 71px;
   padding: 8px;
   gap: 81px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -30,20 +26,29 @@ nav {
   height: 38px;
   margin-left: 222.5px;
 }
-.form-inline {
-  display: flex;
-  width: 460px;
+#logo {
+  height: 15px;
+  width: 14.0625px;
+  left: 167.9375px;
+  top: 0px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #515868;
+}
+.form-nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
   gap: 11px;
+  width: 460px;
   height: 30px;
   margin-right: 222.5px;
   margin-left: 81px;
 }
-.ty {
+.icon-inside {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -56,33 +61,17 @@ nav {
   border-radius: 4px;
   margin-left: 128px;
 }
-#b-color {
-  width: 160px;
-  height: 16px;
+.b-color {
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   background: #272f43;
-  border: 1px solid rgba(180, 181, 184, 0.04);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
+  border: 0px solid #272f43;
   gap: 6px;
   width: 182px;
   height: 16px;
-}
-#logo {
-  height: 15px;
-  width: 14.0625px;
-  left: 167.9375px;
-  top: 0px;
-  border-radius: 3px;
-  box-sizing: border-box;
-  position: absolute;
-  border: 1px solid #515868;
 }
 #nav-btn1 {
   width: 51px;
@@ -90,16 +79,10 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  left: 0px;
-  top: 0px;
   padding: 7px;
   gap: 10px;
   background-color: #051027;
   border: 0px solid #9e9c9c;
-}
-.btn-1 {
-  width: 37px;
-  height: 16px;
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
@@ -113,25 +96,17 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  left: 0px;
-  top: 0px;
   border: 0.5px solid #9e9c9c;
   border-radius: 6px;
   background-color: #051027;
-}
-.btn-2 {
-  width: 41px;
-  height: 16px;
-  left: 8px;
-  top: 6.5px;
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #f8f7f7;
+  padding: 0px;
 }
-
 .body-left {
   display: flex;
   flex-direction: column;
@@ -144,21 +119,18 @@ nav {
   left: calc(50% - 450px / 2 - 296px);
   top: calc(50% - 272px / 2 - 212.5px);
 }
-.frame-5 {
+.body-frame {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 11px;
   gap: 10px;
-  width: 414px;
+  width: 424px;
   height: 272px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
-#body-1 {
-  width: 392px;
+#body-text-1 {
+  width: 402px;
   height: 114px;
   font-family: "Inter";
   font-style: normal;
@@ -168,8 +140,8 @@ nav {
   text-align: justify;
   color: #ffffff;
 }
-#body-2 {
-  width: 392px;
+#body-text-2 {
+  width: 402px;
   height: 60px;
   font-family: "Actor";
   font-style: normal;
@@ -178,7 +150,7 @@ nav {
   line-height: 20px;
   color: #bdbdbd;
 }
-.Sign {
+.up-sign {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -187,7 +159,7 @@ nav {
   width: 402px;
   height: 43px;
 }
-#em-te {
+#em-text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -202,31 +174,34 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 15px 14px;
+  padding: 15px 10px;
   width: 106px;
   height: 30px;
   background: #2ea44f;
   border-radius: 5px;
-}
-#t-1 {
-  width: 79px;
-  height: 12px;
   font-family: "Actor";
   font-style: normal;
   font-weight: normal;
-  font-size: 9px;
-  line-height: 10px;
+  font-size: 10px;
+  line-height: 12px;
   color: white;
 }
-
-.globe {
+#globe {
   position: absolute;
   width: 490px;
   height: 472px;
   left: 712px;
   top: 77px;
 }
-.m-detail {
+#line {
+  position: absolute;
+  width: 991px;
+  height: 0px;
+  left: 222px;
+  top: 508px;
+  border: 1px solid rgba(97, 97, 97, 0.44);
+}
+.stats {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -238,70 +213,50 @@ nav {
   left: 222px;
   top: 511px;
 }
-.i-detail {
-  background-position: center top;
-  position: absolute;
-  width: 358px;
-  height: 316px;
-  left: 949px;
-  top: 348px;
-}
-.line {
-  position: absolute;
-  width: 991px;
-  height: 0px;
-  left: 222px;
-  top: 508px;
-  border: 1px solid rgba(97, 97, 97, 0.44);
-}
+
 .a {
   font-size: 13px;
 }
 .b {
   font-size: 9px;
 }
-#a1 {
-  width: 63px;
-  height: 28px;
+article {
   font-family: "Anaheim";
   font-style: normal;
   font-weight: 400;
-  /* font-size: 13px; */
   line-height: 17px;
+}
+#a1 {
+  width: 63px;
+  height: 28px;
 }
 #a2 {
   width: 57px;
   height: 28px;
-  font-family: "Anaheim";
-  font-style: normal;
-  font-weight: 400;
-  /* font-size: 13px; */
-  line-height: 17px;
 }
 #a3 {
   width: 69px;
   height: 28px;
-  font-family: "Anaheim";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
 }
 #a4 {
   width: 43px;
   height: 28px;
-  font-family: "Anaheim";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px;
 }
 #rectangle-big {
   position: absolute;
-  width: 1460px;
-  height: 422.97px;
   left: 0px;
   top: 601.03px;
+  width: 1460px;
+  height: 422.97px;
 }
-.rectangle-small {
+#space-img {
+  position: absolute;
+  width: 358px;
+  height: 316px;
+  left: 949px;
+  top: 348px;
+}
+#rectangle-small {
   position: absolute;
   width: 849px;
   height: 176px;
@@ -312,10 +267,14 @@ nav {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
-.set {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+#social-img {
+  position: absolute;
+  width: 538px;
+  height: 172px;
+  left: 623px;
+  top: 662px;
+}
+.rec-text {
   padding: 10px;
   gap: 6px;
   position: absolute;
@@ -324,7 +283,10 @@ nav {
   left: 329px;
   top: 684px;
 }
-#set-1 {
+#rec-text-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 176px;
   height: 36px;
   font-family: "Bakbak One";
@@ -332,11 +294,13 @@ nav {
   font-weight: 400;
   font-size: 17px;
   line-height: 108.5%;
-  /* or 18px */
   letter-spacing: -0.025em;
   color: #627597;
 }
-#set-2 {
+#rec-text-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 280px;
   height: 30px;
   font-family: "Actor";
@@ -346,60 +310,42 @@ nav {
   line-height: 114.3%;
   color: #626262;
 }
-.social-img {
-  position: absolute;
-  width: 538px;
-  height: 172px;
-  left: 623px;
-  top: 662px;
-}
-.bb {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  /* padding: 0px;
-  gap: 9px;
-  top: 118px;
-  bottom: 45px; */
-} 
 #b-1 {
   width: 138px;
   height: 33px;
   font-family: "Inter";
+  text-align: center;
   font-style: normal;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 13px;
   color: #000000;
-  padding: 10px 25px;
-  border: 0.8px solid #BABABA;
+  padding: 10px;
+  border: 0.8px solid #bababa;
   background-color: white;
-border-radius: 4px;
-margin: -6px -35px -10px -10px;
- }
+  border-radius: 4px;
+  margin: -6px -35px -10px -10px;
+}
 #b-2 {
   width: 108px;
   height: 33px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 13px;
   line-height: 13px;
   color: #000000;
-  border: 0px solid #BABABA;
+  padding: 8px;
+  border: 0px solid #bababa;
   background-color: white;
-    padding: 10px;
-    gap:10px;
-    margin: -30px 568px 35px 151px;
-.ecl-5 {
+  margin: -23px 568px -9px 137px;
+}
+#design-1 {
   position: absolute;
   width: 490px;
   height: 494px;
   left: 1310.54px;
   top: 887.76px;
-
   background: linear-gradient(
     327.78deg,
     rgba(4, 15, 36, 0) 29.53%,
@@ -409,14 +355,12 @@ margin: -6px -35px -10px -10px;
   filter: blur(280px);
   transform: rotate(-108.02deg);
 }
-
-.ecl-4 {
+#design-2 {
   position: absolute;
   width: 490px;
   height: 494px;
   left: 1222.54px;
   top: 433.76px;
-
   background: linear-gradient(
     327.78deg,
     rgba(4, 15, 36, 0) 29.53%,
@@ -426,13 +370,12 @@ margin: -6px -35px -10px -10px;
   filter: blur(300px);
   transform: rotate(-108.02deg);
 }
-.ecl-2 {
+#design-3 {
   position: absolute;
   width: 490px;
   height: 494px;
   left: 262.55px;
   top: 120.29px;
-
   background: linear-gradient(
     327.78deg,
     rgba(4, 15, 36, 0) 29.53%,
