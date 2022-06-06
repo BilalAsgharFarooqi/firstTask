@@ -1,7 +1,7 @@
 <!DOCTYPE html5>
 <html lang="en">
   <head>
-    <title>Sign in to GitHub</title>
+    <title>Sign up to GitHub</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -13,12 +13,31 @@
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
-    <div class="container-fluid">
+   <div class="container-fluid">
       <img src="/images/ghub.png" width="48px" height="48px" alt="img" />
-      <div class="mainx">
-        <h1>Sign in to GitHub</h1>
-        <div class="main">
-          <form action="#">
+     <h1>Signup for GitHub</h1>
+        <div class="mb-3">
+              <label for="exampleInputText1" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputText1"
+                aria-describedby="textHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputText1" class="form-label"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputText1"
+                aria-describedby="TextHelp"
+              />
+            </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
                 >Email address</label
@@ -28,15 +47,21 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                required
               />
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
-                >Password<span
-                  ><a href="https://github.com/password_reset"
-                    >Forgot Password?</a
-                  ></span
+                >Password
+              </label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password Confirmation</span
                 ></label
               >
               <input
@@ -46,13 +71,11 @@
               />
             </div>
             <div class="d-grid gap-2">
-              <button class="btn btn-success btn-clr" type="button">
-                Sign in
-              </button>
+              <button class="btn btn-success" type="button">Sign up</button>
             </div>
           </form>
-        </div>
-      </div>
+    </div>
+    
       <div class="account">
         <p>New to GitHub? <a href="">Create an account.</a></p>
       </div>

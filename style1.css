@@ -1,44 +1,76 @@
 * {
   box-sizing: border-box;
 }
+link {
+  text-decoration: none;
+}
 body {
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
+}
+img {
   display: block;
-  align-content: center;
+  margin: 30px auto -60px auto;
+  height: 49px;
 }
 h1 {
   font-size: 24px;
   font-weight: 300;
   letter-spacing: -0.5px;
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  text-shadow: none;
+}
+.btn-clr {
+  background-color: #2da44e;
+  width: 272px;
+  height: 32px;
+  text-align: center;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.mainx {
+  width: 340px;
+  height: 343px;
+  margin: 100px auto -40px auto;
 }
 .main {
   width: 308px;
-  height: 220px;
-  border: 2px solid black;
+  height: 240px;
+  border: 1px solid hsla(210, 18%, 87%, 1);
   font-size: 14px;
   border-radius: 6px;
   background-color: #f6f8fa;
   padding: 16px 16px;
+  margin: 10px auto 10px auto;
 }
 form {
   width: 274px;
   height: 186px;
 }
 .account {
-  padding: 16px 16px;
-  text-align: center;
-  border: 2px solid black;
+  width: 308px;
+  height: 55px;
+  border: 1px solid #d0d7de;
   border-radius: 6px;
-  margin-top: 16px !important;
-  margin-bottom: 10px;
+  align-self: center;
+  margin: auto;
 }
-
 .account p {
+  width: 274px;
+  height: 21px;
+  padding: 16px;
+  text-align: center;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  word-wrap: break-word;
+}
+.mainx {
+  margin-top: 100px;
 }

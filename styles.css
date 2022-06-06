@@ -1,6 +1,7 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
+
 body {
   position: relative;
   width: 1440px;
@@ -89,6 +90,7 @@ nav {
   font-size: 13px;
   line-height: 16px;
   color: #f8f7f7;
+  text-decoration: none;
 }
 #nav-btn2 {
   width: 59px;
@@ -106,6 +108,7 @@ nav {
   line-height: 16px;
   color: #f8f7f7;
   padding: 0px;
+  text-decoration: none;
 }
 .body-left {
   display: flex;
