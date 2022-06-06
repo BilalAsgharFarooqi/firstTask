@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  display: block;
+  align-content: center;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+.main {
+  width: 308px;
+  height: 220px;
+  border: 2px solid black;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  padding: 16px 16px;
+}
+form {
+  width: 274px;
+  height: 186px;
+}
+.account {
+  padding: 16px 16px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-top: 16px !important;
+  margin-bottom: 10px;
+}
+
+.account p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
