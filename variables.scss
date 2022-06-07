@@ -1,0 +1,43 @@
+@include media-breakpoint-only(xs) {
+  background-color: red;
+}
+@include media-breakpoint-only(sm) {
+  background-color: orange;
+}
+@include media-breakpoint-only(md) {
+  background-color: purple;
+}
+@include media-breakpoint-only(lg) {
+  background-color: blue;
+}
+@include media-breakpoint-only(xl) {
+  background-color: blue;
+}
+@include media-breakpoint-only(xxl) {
+  background-color: pink;
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//   background-color: red;
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//   background-color: orange;
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   background-color: purple;
+// }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   background-color: blue;
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//   background-color: pink;
+// }

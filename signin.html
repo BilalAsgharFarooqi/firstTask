@@ -1,7 +1,8 @@
 <!DOCTYPE html5>
 <html lang="en">
   <head>
-    <title>Sign in to GitHub</title>
+    <title>Sign in to GitHub · GitHub</title>
+    <link rel="title icon" href="./images/title.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -10,15 +11,18 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style-in.css" />
+    <link rel="stylesheet" href="variables.css" />
   </head>
   <body>
     <div class="container-fluid">
-      <img src="/images/ghub.png" width="48px" height="48px" alt="img" />
+      <a href="https://github.com/" alt="github"
+        ><img src="/images/ghub.png" width="48px" height="48px" alt="img"
+      /></a>
       <div class="mainx">
         <h1>Sign in to GitHub</h1>
         <div class="main">
-          <form action="#">
+          <form class="form1" action="#">
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
                 >Email address</label
@@ -33,16 +37,20 @@
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label"
-                >Password<span
-                  ><a href="https://github.com/password_reset"
-                    >Forgot Password?</a
-                  ></span
-                ></label
+                >Password</label
+              ><span
+                ><a
+                  href="https://github.com/password_reset"
+                  alt=""
+                  class="right"
+                  >Forgot Password?</a
+                ></span
               >
               <input
                 type="password"
                 class="form-control"
                 id="exampleInputPassword1"
+                required
               />
             </div>
             <div class="d-grid gap-2">
@@ -53,8 +61,8 @@
           </form>
         </div>
       </div>
-      <div class="account">
-        <p>New to GitHub? <a href="">Create an account.</a></p>
+      <div class="account1">
+        <p>New to GitHub? <a href="./signup.html">Create an account.</a></p>
       </div>
     </div>
   </body>

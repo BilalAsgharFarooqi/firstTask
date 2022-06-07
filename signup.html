@@ -1,84 +1,118 @@
 <!DOCTYPE html5>
 <html lang="en">
   <head>
-    <title>Sign up to GitHub</title>
+    <title>Sign up to GitHub · GitHub</title>
+    <link rel="title icon" href="./images/title.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style1.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style-in.css" />
   </head>
   <body>
-   <div class="container-fluid">
-      <img src="/images/ghub.png" width="48px" height="48px" alt="img" />
-     <h1>Signup for GitHub</h1>
+     <div class="container-fluid">
+      <section>
+      <a href="https://github.com/" alt="github"
+        >
+        <img src="/images/ghub.png" width="48px" height="48px" alt="img"
+      />
+      </a>
+      </section>
+      <div class="layoutx">
+       <h1>Sign up for GitHub</h1>
+       <div class="layout">
+       <form class="form2" action="#">
         <div class="mb-3">
-              <label for="exampleInputText1" class="form-label"
+              <label for="InputText1" class="form-label"
                 >First Name</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="exampleInputText1"
-                aria-describedby="textHelp"
+                id="InputText1"
+                aria-describedby="textHelp" minlength="4" maxlength="8" required
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputText1" class="form-label"
+              <label for="exampleInputText2" class="form-label"
                 >Last Name</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="exampleInputText1"
-                aria-describedby="TextHelp"
+                id="exampleInputText2"
+                aria-describedby="TextHelp" required
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
+              <label for="exampleInputEmail2" class="form-label"
                 >Email address</label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
+                id="exampleInputEmail2"
+                aria-describedby="emailHelp" required
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
+              <label for="password" class="form-label"
                 >Password
               </label>
               <input
                 type="password"
-                class="form-control"
-                id="exampleInputPassword1"
+                class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                id="password" required
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
+              <label for="confirmpassword" class="form-label"
                 >Password Confirmation</span
                 ></label
               >
               <input
                 type="password"
-                class="form-control"
-                id="exampleInputPassword1"
+                class="form-control" 
+                id="confirmpassword" 
               />
+              <div class="form-text confirm-message"></div>
             </div>
             <div class="d-grid gap-2">
-              <button class="btn btn-success" type="button">Sign up</button>
-            </div>
-          </form>
-    </div>
-    
-      <div class="account">
-        <p>New to GitHub? <a href="">Create an account.</a></p>
+              <button class="btn btn-success btn-clr" type="button">
+                Sign up
+              </button>
+       </form>
+       </div>
       </div>
-    </div>
+      <div class="account2">
+        <p>Already have an account? <a href="./signin.html">Sign in.</a></p>
+      </div>
+     <section> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $('#password, #confirmpassword').on('keyup', function(){
+
+        $('.confirm-message').removeClass('success-message').removeClass('error-message');
+
+        let password=$('#password').val();
+        let confirm_password=$('#confirmpassword').val();
+
+        if(password===""){
+            $('.confirm-message').text("Password Field cannot be empty").addClass('error-message');
+        }
+        else if(confirm_password===""){
+            $('.confirm-message').text("Confirm Password Field cannot be empty").addClass('error-message');
+        }
+        else if(confirm_password===password)
+        {
+            $('.confirm-message').text('Password Match!').addClass('success-message');
+        }
+        else{
+            $('.confirm-message').text("Password Doesn't Match!").addClass('error-message');
+        }
+
+    });
+     </script>
+     </section>
+     </div>
   </body>
 </html>
