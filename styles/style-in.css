@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
 }
-#exampleInputEmail1,
-#exampleInputEmail2,
-#exampleInputPassword1,
+#InputEmail1,
+#InputEmail2,
+#InputPassword1,
 #password,
 #confirmpassword,
 #InputText1,
-#exampleInputText2 {
+#InputText2 {
   width: 274px;
   height: 32px;
 }

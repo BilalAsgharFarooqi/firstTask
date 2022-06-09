@@ -1,0 +1,19 @@
+.responsive {
+  background: yellow;
+}
+
+@media only screen and (max-width: 680px) {
+  .responsive {
+    background: lightblue;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .responsive {
+    background: aquamarine;
+  }
+  .responsive h1 {
+    color: red;
+  }
+}
+/*# sourceMappingURL=variables.css.map */

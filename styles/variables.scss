@@ -1,0 +1,31 @@
+@mixin devices($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 680px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media only screen and (max-width: 481px) {
+      @content;
+    }
+  }
+}
+// Handling the responsiveness
+.responsive {
+  background: yellow;
+  // The normal background color is set to yellow
+
+  @include devices(tablet) {
+    background: lightblue;
+    // code set for tablet
+  }
+
+  @include devices(mobile) {
+    background: aquamarine;
+    h1 {
+      color: red;
+    }
+    // code set for mobile
+  }
+}
