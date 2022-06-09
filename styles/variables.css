@@ -1,19 +1,35 @@
-.responsive {
-  background: yellow;
-}
-
-@media only screen and (max-width: 680px) {
-  .responsive {
-    background: lightblue;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: forestgreen;
   }
 }
 
-@media only screen and (max-width: 481px) {
-  .responsive {
-    background: aquamarine;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
   }
-  .responsive h1 {
-    color: red;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: pink;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: violet;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: yellow;
   }
 }
 /*# sourceMappingURL=variables.css.map */
