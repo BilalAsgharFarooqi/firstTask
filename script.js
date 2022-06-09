@@ -1,4 +1,4 @@
-function ValidateEmailandDuplication(input) {
+function EmailValidateandDuplicateCheck(input) {
   var firstName = document.getElementById("InputText1").value;
   var lastName = document.getElementById("InputText2").value;
   var email = document.getElementById("InputEmail2").value;
