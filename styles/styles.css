@@ -62,14 +62,14 @@ nav {
   border-radius: 4px;
   margin-left: 128px;
 }
-.b-color {
+#b-color {
   font-family: "Actor";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   background: #272f43;
-  border: 0px solid #272f43;
+  border: 0px none #272f43;
   gap: 6px;
   width: 182px;
   height: 16px;
@@ -90,6 +90,29 @@ nav {
   font-size: 13px;
   line-height: 16px;
   color: #f8f7f7;
+  text-decoration: none;
+}
+/* unvisited link */
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
   text-decoration: none;
 }
 #nav-btn2 {

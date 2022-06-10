@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Sign up to GitHub · GitHub</title>
+    <!-- GitHub logo in the -->
     <link rel="title icon" href="./images/title.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,25 +12,27 @@
   </head>
   <body>
      <div class="container-fluid">
+       <!-- The following section if top of the signup page -->
       <section>
-      <a href="https://github.com/" alt="github"
+        <a href="https://github.com/" alt="github"
         >
-        <img src="/images/ghub.png" width="48px" height="48px" alt="img"
-      />
-      </a>
+         <img src="/images/ghub.png" width="48px" height="48px" alt="img"
+         />
+        </a>
       </section>
-      <div class="layoutx">
+       <!-- The following section is the form area and its heading -->
+      <section class="layoutx">
        <h1>Sign up for GitHub</h1>
        <div class="layout">
-       <form class="form2" action="#" name="form2" >
-        <div class="mb-3">
+        <form class="form2" action="#" name="form2">
+            <div class="mb-3">
               <label for="InputText1" class="form-label"
                 >First Name</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="InputText1"
+                id="InputText1" name="text1"
                 aria-describedby="textHelp" minlength="4" maxlength="8" required
               />
             </div>
@@ -40,7 +43,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="InputText2"
+                id="InputText2" name="text2"
                 aria-describedby="TextHelp" required
               />
             </div>
@@ -62,7 +65,7 @@
               </label>
               <input
                 type="password"
-                class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="pass"
                 id="password" required
               />
             </div>
@@ -73,31 +76,32 @@
               >
               <input
                 type="password"
-                class="form-control" 
-                id="confirmpassword" 
+                class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                id="confirmpassword" name="conpass"
               />
               <div class="form-text confirm-message"></div>
             </div>
             <div class="d-grid gap-2">
-              <button class="btn btn-success btn-clr" type="button" onclick="EmailValidateandDuplicateCheck(document.form2.InputEmail2)">
+              <button class="btn btn-success btn-clr" type="button" onclick="FormValidate(document.form2.InputEmail2)">
                 Sign up
               </button>
-       </form>
+            </div>
+        </form>
        </div>
-      </div>
-      <div class="account2">
+      </section>
+      <!-- The following section is bottom of form area -->
+      <section class="account2">
         <p>Already have an account? <a href="./signin.html">Sign in.</a></p>
-      </div>
-     <section> 
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-    $('#password, #confirmpassword').on('keyup', function(){
-
+      </section>
+      <!-- Following jquery was used but it had an impact on the visual design of the code -->
+      <!-- <section> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+    $('#password, #confirmpassword').on('keyup', function()
+    {
         $('.confirm-message').removeClass('success-message').removeClass('error-message');
-
         let password=$('#password').val();
         let confirm_password=$('#confirmpassword').val();
-
         if(password===""){
             $('.confirm-message').text("Password Field cannot be empty").addClass('error-message');
         }
@@ -107,6 +111,7 @@
         else if(confirm_password===password)
         {
             $('.confirm-message').text('Password Match!').addClass('success-message');
+            alert('Password Match!');
         }
         else{
             $('.confirm-message').text("Password Doesn't Match!").addClass('error-message');
@@ -123,10 +128,8 @@
   }
 });
      </script>
-     </section>
-     
+      </section> -->
      </div>
      <script src="script.js"></script>
-     
-  </body>
+    </body>
 </html>
